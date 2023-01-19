@@ -64,7 +64,9 @@ group :development do
   # gem "spring"
 end
 gem 'autoprefixer-rails'
+gem 'faker'
 gem 'font-awesome-sass', '~> 6.1'
+gem 'open-uri'
 gem 'rails-controller-testing', group: [:test]
 gem 'rspec-rails', group: [:test]
 gem 'sassc-rails'
