@@ -8,6 +8,9 @@
 
 require 'open-uri'
 require 'JSON'
+Bookmark.destroy_all
+List.destroy_all
+Movie.destroy_all
 link = 'https://tmdb.lewagon.com/movie/top_rated'
 movie_list = JSON.parse(URI.open(link).read)
 new_movie_list = movie_list['results']

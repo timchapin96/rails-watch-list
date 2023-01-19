@@ -64,6 +64,7 @@ group :development do
   # gem "spring"
 end
 gem 'autoprefixer-rails'
+gem 'cloudinary'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'faker'
 gem 'font-awesome-sass', '~> 6.1'
