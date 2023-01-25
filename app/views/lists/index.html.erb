@@ -1,10 +1,11 @@
 <div class="container">
   <h1>List</h1>
-  raise
   <ul>
-    <% @lists.each do |list| %>
-      <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
-      <li><%= link_to list.name, list_path(list)%> </li>
+    <% if @lists.any? %>
+      <% @lists.each do |list| %>
+        <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+        <li><%= link_to list.name, list_path(list)%> </li>
+      <% end %>
     <% end %>
   </ul>
 
