@@ -3,7 +3,9 @@
   <ul>
     <% if @lists.any? %>
       <% @lists.each do |list| %>
-        <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+        <% if list.photo %>
+          <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+        <% end %>
         <li><%= link_to list.name, list_path(list)%> </li>
       <% end %>
     <% end %>
